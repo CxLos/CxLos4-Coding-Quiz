@@ -12,23 +12,40 @@
 <body>
 
     <header>
-        <h1>Coding Challenge</h1>
+        <h1>Coding Quiz</h1>
     </header>
+
+    <div>
+        <h2 id="timer">00:00</h2>
+    </div>
 
     <div id="quizbox">
 
         <div id="quizbox2">
 
-            <section id="container">
+            <section id="container" class="ready">
                 <h2>Ready?</h2>
             </section>
             
             <section id="container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis nam neque quasi rem dolores, magni sed vitae eius dolorem culpa nemo dolor. Porro reiciendis possimus obcaecati quibusdam! Sint commodi porro hic nostrum, animi eligendi cumque earum at. Modi quod asperiores ipsa aliquid quo exercitationem laboriosam cumque ut dolorem nihil quas dignissimos, tempora, corrupti porro nostrum repudiandae libero ex molestias!</p>
+                <h2 id="question" class="hide">What was the start date of this class?</h2>
+            </section>
+
+            <!-- <section>
+                <ul>
+                    <li></li>
+                </ul>
+            </section> -->
+
+            <section class="btnbox">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </section>
 
             <section id="container">
-                <button id="go">Lets Go!</button>
+                <button id="go" class="btn">Lets Go!</button>
             </section>
 
         </div>
