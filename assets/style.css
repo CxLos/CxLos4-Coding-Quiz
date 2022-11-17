@@ -46,6 +46,18 @@ p {
     align-self: center;
 }
 
+#container-timer {
+    flex: 1;
+    display: inline-block;
+    align-self: center;
+    /* border: 10px solid;
+    border-radius: 70px;
+    height: 130px;
+    width: 240px; */
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
 .btn {
     background-color: rgb(181, 181, 181);
     height: 70px;
