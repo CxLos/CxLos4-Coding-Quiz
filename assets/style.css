@@ -46,6 +46,11 @@ p {
     align-self: center;
 }
 
+#container2 {
+    flex: 1;
+    align-self: center;
+}
+
 #container-timer {
     flex: 1;
     display: inline-block;
@@ -113,6 +118,18 @@ button:hover {
 
 .hide {
     display: none;
+}
+
+#input {
+    height: 50px;
+    width: 300px;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+label {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 @media screen and (max-width: 896px) {

@@ -4,6 +4,9 @@ const quizbox = document.querySelector('#quizbox')
 const question = document.querySelector('#question')
 const ready = document.querySelector('.ready')
 const answer = document.querySelector('.btnbox')
+const input = document.querySelector('#container2')
+var startq = document.querySelector('#go');
+var submit = document.querySelector('#submit')
 var x = 60
 let randomQ, currentQIndex
 
@@ -33,6 +36,7 @@ function gameOver () {
     // over.classList.add('h2')
     question.innerHTML = 'Game Over!'
     answer.classList.add('hide')
+    input.classList.remove('hide')
 
 //     var count = 0;
 
@@ -61,6 +65,7 @@ function letsGo() {
 
 function nextQ() {
     showQ(randomQ[currentQIndex])
+    //results ()
 }
 
 function showQ(question0){
@@ -97,8 +102,15 @@ function chooseA(e) {
     } else {
         // alert('Incorrect')
         x -= 10
+        nextQ()
     }
     
+}
+
+function homePage() {
+    question.classList.remove('hide')
+    startq.classList.remove('hide')
+    input.classList.add('hide')
 }
 
 const quizz = [
@@ -114,7 +126,7 @@ const quizz = [
     {
         question0: 'What topic did we cover in week 4 of the bootcamp?',
         answers: [
-            {text: '', correct: false },
+            {text: 'GitHub', correct: false },
             {text: 'Web APIs', correct: true },
             {text: 'Javascript', correct: false },
             {text: 'CSS', correct: false },
@@ -140,12 +152,17 @@ const quizz = [
     }
 ]
 
+// result () {
+
+// }
+
 ///////////////////eventListener//////////////////
-var startq = document.querySelector('#go');
+
 
 startq.addEventListener('click', letsGo);
 startq.addEventListener('click', countDown);
 
+submit.addEventListener('click', homePage);
 
 /////////Tutoring Questions////////////
 
